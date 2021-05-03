@@ -44,7 +44,13 @@ namespace WindowsFormsApp1
             this.editcourse_item = new System.Windows.Forms.ToolStripMenuItem();
             this.managecourse_item = new System.Windows.Forms.ToolStripMenuItem();
             this.printcourse_item = new System.Windows.Forms.ToolStripMenuItem();
+            this.addscore_item = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.managescore_item = new System.Windows.Forms.ToolStripMenuItem();
+            this.printscore_item = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
+            this.avgscore_item = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +61,8 @@ namespace WindowsFormsApp1
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sTUDENTToolStripMenuItem,
-            this.toolStripMenuItem7});
+            this.toolStripMenuItem7,
+            this.addscore_item});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
@@ -174,7 +181,7 @@ namespace WindowsFormsApp1
             this.addcourse_item.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.addcourse_item.ForeColor = System.Drawing.Color.White;
             this.addcourse_item.Name = "addcourse_item";
-            this.addcourse_item.Size = new System.Drawing.Size(180, 22);
+            this.addcourse_item.Size = new System.Drawing.Size(156, 22);
             this.addcourse_item.Text = "Add Course";
             this.addcourse_item.Click += new System.EventHandler(this.addcourse_item_Click);
             // 
@@ -183,7 +190,7 @@ namespace WindowsFormsApp1
             this.removecourse_item.BackColor = System.Drawing.Color.Black;
             this.removecourse_item.ForeColor = System.Drawing.Color.White;
             this.removecourse_item.Name = "removecourse_item";
-            this.removecourse_item.Size = new System.Drawing.Size(180, 22);
+            this.removecourse_item.Size = new System.Drawing.Size(156, 22);
             this.removecourse_item.Text = "Remove Course";
             this.removecourse_item.Click += new System.EventHandler(this.removecourse_item_Click);
             // 
@@ -192,7 +199,7 @@ namespace WindowsFormsApp1
             this.editcourse_item.BackColor = System.Drawing.Color.Black;
             this.editcourse_item.ForeColor = System.Drawing.Color.White;
             this.editcourse_item.Name = "editcourse_item";
-            this.editcourse_item.Size = new System.Drawing.Size(180, 22);
+            this.editcourse_item.Size = new System.Drawing.Size(156, 22);
             this.editcourse_item.Text = "Edit Course";
             this.editcourse_item.Click += new System.EventHandler(this.editcourse_item_Click);
             // 
@@ -201,7 +208,7 @@ namespace WindowsFormsApp1
             this.managecourse_item.BackColor = System.Drawing.Color.Black;
             this.managecourse_item.ForeColor = System.Drawing.Color.White;
             this.managecourse_item.Name = "managecourse_item";
-            this.managecourse_item.Size = new System.Drawing.Size(180, 22);
+            this.managecourse_item.Size = new System.Drawing.Size(156, 22);
             this.managecourse_item.Text = "Manage Course";
             this.managecourse_item.Click += new System.EventHandler(this.managecourse_item_Click);
             // 
@@ -210,9 +217,65 @@ namespace WindowsFormsApp1
             this.printcourse_item.BackColor = System.Drawing.Color.Black;
             this.printcourse_item.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.printcourse_item.Name = "printcourse_item";
-            this.printcourse_item.Size = new System.Drawing.Size(180, 22);
+            this.printcourse_item.Size = new System.Drawing.Size(156, 22);
             this.printcourse_item.Text = "Print";
             this.printcourse_item.Click += new System.EventHandler(this.printcourse_item_Click);
+            // 
+            // addscore_item
+            // 
+            this.addscore_item.AutoSize = false;
+            this.addscore_item.BackColor = System.Drawing.Color.Black;
+            this.addscore_item.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.addscore_item.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.addscore_item.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem9,
+            this.toolStripMenuItem10,
+            this.managescore_item,
+            this.avgscore_item,
+            this.printscore_item});
+            this.addscore_item.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addscore_item.ForeColor = System.Drawing.Color.White;
+            this.addscore_item.ImageTransparentColor = System.Drawing.Color.White;
+            this.addscore_item.Name = "addscore_item";
+            this.addscore_item.Size = new System.Drawing.Size(122, 50);
+            this.addscore_item.Text = "SCORE";
+            // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.BackColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.toolStripMenuItem9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripMenuItem9.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(203, 22);
+            this.toolStripMenuItem9.Text = "Add Score";
+            this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click);
+            // 
+            // toolStripMenuItem10
+            // 
+            this.toolStripMenuItem10.BackColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem10.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(203, 22);
+            this.toolStripMenuItem10.Text = "Remove Score";
+            this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
+            // 
+            // managescore_item
+            // 
+            this.managescore_item.BackColor = System.Drawing.Color.Black;
+            this.managescore_item.ForeColor = System.Drawing.Color.White;
+            this.managescore_item.Name = "managescore_item";
+            this.managescore_item.Size = new System.Drawing.Size(203, 22);
+            this.managescore_item.Text = "Manage Score";
+            this.managescore_item.Click += new System.EventHandler(this.managescore_item_Click);
+            // 
+            // printscore_item
+            // 
+            this.printscore_item.BackColor = System.Drawing.Color.Black;
+            this.printscore_item.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.printscore_item.Name = "printscore_item";
+            this.printscore_item.Size = new System.Drawing.Size(203, 22);
+            this.printscore_item.Text = "Print";
             // 
             // button1
             // 
@@ -226,6 +289,14 @@ namespace WindowsFormsApp1
             this.button1.Text = "Log Out";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // avgscore_item
+            // 
+            this.avgscore_item.BackColor = System.Drawing.Color.Black;
+            this.avgscore_item.ForeColor = System.Drawing.Color.White;
+            this.avgscore_item.Name = "avgscore_item";
+            this.avgscore_item.Size = new System.Drawing.Size(203, 22);
+            this.avgscore_item.Text = "Average score by course";
             // 
             // Main
             // 
@@ -272,5 +343,11 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem editcourse_item;
         private System.Windows.Forms.ToolStripMenuItem managecourse_item;
         private System.Windows.Forms.ToolStripMenuItem printcourse_item;
+        private System.Windows.Forms.ToolStripMenuItem addscore_item;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem10;
+        private System.Windows.Forms.ToolStripMenuItem managescore_item;
+        private System.Windows.Forms.ToolStripMenuItem printscore_item;
+        private System.Windows.Forms.ToolStripMenuItem avgscore_item;
     }
 }

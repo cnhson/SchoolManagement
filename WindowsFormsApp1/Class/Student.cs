@@ -146,5 +146,15 @@ namespace WindowsFormsApp1
             sda.Fill(dt);
             return dt;
         }
+
+        public DataTable getStudentbyId(int id)
+        {
+            SqlCommand command = new SqlCommand("Select * from STD_LIST where id = @id", db.GetConnection);
+            command.Parameters.Add("@id", SqlDbType.Int).Value = id;
+            SqlDataAdapter sda = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            return dt;
+        }
     }
 }

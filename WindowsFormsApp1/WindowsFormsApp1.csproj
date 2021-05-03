@@ -66,40 +66,65 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\Course.cs" />
-    <Compile Include="cou_Add.cs">
+    <Compile Include="Course\cou_Add.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cou_Add.Designer.cs">
+    <Compile Include="Course\cou_Add.Designer.cs">
       <DependentUpon>cou_Add.cs</DependentUpon>
     </Compile>
-    <Compile Include="cou_Edit.cs">
+    <Compile Include="Course\cou_Edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cou_Edit.Designer.cs">
+    <Compile Include="Course\cou_Edit.Designer.cs">
       <DependentUpon>cou_Edit.cs</DependentUpon>
     </Compile>
-    <Compile Include="cou_Management.cs">
+    <Compile Include="Course\cou_Management.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cou_Management.Designer.cs">
+    <Compile Include="Course\cou_Management.Designer.cs">
       <DependentUpon>cou_Management.cs</DependentUpon>
     </Compile>
-    <Compile Include="cou_Print.cs">
+    <Compile Include="Course\cou_Print.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cou_Print.Designer.cs">
+    <Compile Include="Course\cou_Print.Designer.cs">
       <DependentUpon>cou_Print.cs</DependentUpon>
     </Compile>
-    <Compile Include="cou_Remove.cs">
+    <Compile Include="Course\cou_Remove.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cou_Remove.Designer.cs">
+    <Compile Include="Course\cou_Remove.Designer.cs">
       <DependentUpon>cou_Remove.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Score.cs" />
+    <Compile Include="Score\sco_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Score\sco_Add.Designer.cs">
+      <DependentUpon>sco_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Score\sco_AvgScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Score\sco_AvgScore.Designer.cs">
+      <DependentUpon>sco_AvgScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Score\sco_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Score\sco_Management.Designer.cs">
+      <DependentUpon>sco_Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Score\sco_Remove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Score\sco_Remove.Designer.cs">
+      <DependentUpon>sco_Remove.cs</DependentUpon>
     </Compile>
     <Compile Include="Student\st_Management.cs">
       <SubType>Form</SubType>
@@ -159,20 +184,32 @@
       <DependentUpon>studentDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Class\User.cs" />
-    <EmbeddedResource Include="cou_Add.resx">
+    <EmbeddedResource Include="Course\cou_Add.resx">
       <DependentUpon>cou_Add.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cou_Edit.resx">
+    <EmbeddedResource Include="Course\cou_Edit.resx">
       <DependentUpon>cou_Edit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cou_Management.resx">
+    <EmbeddedResource Include="Course\cou_Management.resx">
       <DependentUpon>cou_Management.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cou_Print.resx">
+    <EmbeddedResource Include="Course\cou_Print.resx">
       <DependentUpon>cou_Print.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cou_Remove.resx">
+    <EmbeddedResource Include="Course\cou_Remove.resx">
       <DependentUpon>cou_Remove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Score\sco_Add.resx">
+      <DependentUpon>sco_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Score\sco_AvgScore.resx">
+      <DependentUpon>sco_AvgScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Score\sco_Management.resx">
+      <DependentUpon>sco_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Score\sco_Remove.resx">
+      <DependentUpon>sco_Remove.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student\st_Management.resx">
       <DependentUpon>st_Management.cs</DependentUpon>
@@ -248,9 +285,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Course\" />
-    <Folder Include="Score\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

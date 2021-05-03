@@ -106,6 +106,24 @@ namespace WindowsFormsApp1
             cou_Management cM = new cou_Management();
             cM.Show();
         }
+
+        private void toolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            sco_Add sA = new sco_Add();
+            sA.Show();
+        }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            sco_Remove sR = new sco_Remove();
+            sR.Show();
+        }
+
+        private void managescore_item_Click(object sender, EventArgs e)
+        {
+            sco_Management sM = new sco_Management();
+            sM.Show();
+        }
     }
     public class MyColorTable : ProfessionalColorTable
     {
