@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Main : Form
+    public partial class MainMenu : Form
     {
-        public Main()
+        public MainMenu()
         {
             InitializeComponent();
             menuStrip1.Renderer = new ToolStripProfessionalRenderer(new MyColorTable());
@@ -55,7 +55,7 @@ namespace WindowsFormsApp1
             Close();
             DB db = new DB();
             db.closeConnection();
-            LogInForm lof = new LogInForm();
+            Login lof = new Login();
             lof.Show();
         }
 
