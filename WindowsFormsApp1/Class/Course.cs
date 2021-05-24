@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
 
         public bool checkCourse(int cid, string clabel)
         {
-            SqlCommand command = new SqlCommand("select * from COURSE_LIST where clabel = @clabel and cid = @cid)", db.GetConnection);
+            SqlCommand command = new SqlCommand("select * from COURSE_LIST where clabel = @clabel or cid = @cid", db.GetConnection);
             command.Parameters.Add("@cid", SqlDbType.Int).Value = cid;
             command.Parameters.Add("@clabel", SqlDbType.VarChar).Value = clabel;
             SqlDataAdapter sda = new SqlDataAdapter(command);
@@ -37,7 +37,7 @@ namespace WindowsFormsApp1
 
         public bool addCourse(int cid, string clabel, int cperiod , string description)
         {
-            SqlCommand command = new SqlCommand("INSERT INTO COURSE_LIST (cid, clabel, cperiod, description)" +
+            SqlCommand command = new SqlCommand("INSERT INTO COURSE_LIST (cid, clabel, cperiod, cdescription)" +
                 "VALUES (@cid, @clabel, @cperiod, @description)", db.GetConnection);
             command.Parameters.Add("@cid", SqlDbType.Int).Value = cid;
             command.Parameters.Add("@clabel", SqlDbType.VarChar).Value = clabel;
@@ -76,7 +76,7 @@ namespace WindowsFormsApp1
 
         public bool updateCourse(int cid, string clabel, int cperiod, string description)
         {
-            SqlCommand command = new SqlCommand("UPDATE COURSE_LIST SET cid = @cid, clabel = @clabel, cperiod = @cperiod, description = @description)" +
+            SqlCommand command = new SqlCommand("UPDATE COURSE_LIST SET cid = @cid, clabel = @clabel, cperiod = @cperiod, cdescription = @cdescription)" +
                 "where cid = @cid)", db.GetConnection);
             command.Parameters.Add("@cid", SqlDbType.Int).Value = cid;
             command.Parameters.Add("@clabel", SqlDbType.VarChar).Value = clabel;
@@ -108,6 +108,15 @@ namespace WindowsFormsApp1
         }
 
         public DataTable getAllCourse()
+        {
+            SqlCommand command = new SqlCommand("Select c.cid, c.clabel from COURSE_LIST c order by c.cid", db.GetConnection);
+            SqlDataAdapter sda = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            return dt;
+        }
+
+        public DataTable getAllCourseInfo()
         {
             SqlCommand command = new SqlCommand("Select * from COURSE_LIST", db.GetConnection);
             SqlDataAdapter sda = new SqlDataAdapter(command);

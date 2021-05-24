@@ -54,7 +54,7 @@ namespace WindowsFormsApp1
             // 
             this.AddSco_btn.BackColor = System.Drawing.Color.Black;
             this.AddSco_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddSco_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddSco_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.AddSco_btn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.AddSco_btn.Location = new System.Drawing.Point(140, 244);
             this.AddSco_btn.Margin = new System.Windows.Forms.Padding(2);
@@ -68,12 +68,12 @@ namespace WindowsFormsApp1
             // description_Box
             // 
             this.description_Box.BackColor = System.Drawing.Color.Black;
-            this.description_Box.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.description_Box.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.description_Box.ForeColor = System.Drawing.Color.White;
             this.description_Box.Location = new System.Drawing.Point(140, 192);
             this.description_Box.Margin = new System.Windows.Forms.Padding(2);
             this.description_Box.Name = "description_Box";
-            this.description_Box.Size = new System.Drawing.Size(159, 24);
+            this.description_Box.Size = new System.Drawing.Size(159, 21);
             this.description_Box.TabIndex = 26;
             this.description_Box.Text = "Fail or Pass";
             this.description_Box.Enter += new System.EventHandler(this.description_Box_Enter);
@@ -82,94 +82,94 @@ namespace WindowsFormsApp1
             // clabel_Box
             // 
             this.clabel_Box.BackColor = System.Drawing.Color.Black;
-            this.clabel_Box.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clabel_Box.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.clabel_Box.ForeColor = System.Drawing.Color.White;
             this.clabel_Box.Location = new System.Drawing.Point(140, 105);
             this.clabel_Box.Margin = new System.Windows.Forms.Padding(2);
             this.clabel_Box.Name = "clabel_Box";
-            this.clabel_Box.Size = new System.Drawing.Size(159, 24);
+            this.clabel_Box.Size = new System.Drawing.Size(159, 21);
             this.clabel_Box.TabIndex = 24;
             // 
             // id_Box
             // 
             this.id_Box.BackColor = System.Drawing.Color.Black;
-            this.id_Box.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_Box.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.id_Box.ForeColor = System.Drawing.Color.White;
             this.id_Box.Location = new System.Drawing.Point(140, 18);
             this.id_Box.Margin = new System.Windows.Forms.Padding(2);
             this.id_Box.Name = "id_Box";
-            this.id_Box.Size = new System.Drawing.Size(159, 24);
+            this.id_Box.Size = new System.Drawing.Size(159, 21);
             this.id_Box.TabIndex = 20;
             // 
             // description_label
             // 
             this.description_label.BackColor = System.Drawing.Color.Black;
             this.description_label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.description_label.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.description_label.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.description_label.ForeColor = System.Drawing.Color.White;
-            this.description_label.Location = new System.Drawing.Point(18, 193);
+            this.description_label.Location = new System.Drawing.Point(32, 192);
             this.description_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.description_label.Name = "description_label";
             this.description_label.Size = new System.Drawing.Size(90, 23);
             this.description_label.TabIndex = 21;
             this.description_label.Text = "Description";
-            this.description_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.description_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // score_label
             // 
             this.score_label.BackColor = System.Drawing.Color.Black;
             this.score_label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.score_label.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.score_label.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.score_label.ForeColor = System.Drawing.Color.White;
-            this.score_label.Location = new System.Drawing.Point(18, 149);
+            this.score_label.Location = new System.Drawing.Point(32, 148);
             this.score_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.score_label.Name = "score_label";
             this.score_label.Size = new System.Drawing.Size(90, 23);
             this.score_label.TabIndex = 22;
             this.score_label.Text = "Score";
-            this.score_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.score_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // clabel_label
             // 
             this.clabel_label.BackColor = System.Drawing.Color.Black;
             this.clabel_label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clabel_label.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clabel_label.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.clabel_label.ForeColor = System.Drawing.Color.White;
-            this.clabel_label.Location = new System.Drawing.Point(17, 106);
+            this.clabel_label.Location = new System.Drawing.Point(31, 105);
             this.clabel_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.clabel_label.Name = "clabel_label";
             this.clabel_label.Size = new System.Drawing.Size(90, 23);
             this.clabel_label.TabIndex = 23;
             this.clabel_label.Text = "Label";
-            this.clabel_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.clabel_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // id_label
             // 
             this.id_label.BackColor = System.Drawing.Color.Black;
             this.id_label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.id_label.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_label.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.id_label.ForeColor = System.Drawing.Color.White;
-            this.id_label.Location = new System.Drawing.Point(18, 18);
+            this.id_label.Location = new System.Drawing.Point(32, 17);
             this.id_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.id_label.Name = "id_label";
             this.id_label.Size = new System.Drawing.Size(90, 23);
             this.id_label.TabIndex = 27;
             this.id_label.Text = "ID";
-            this.id_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.id_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(18, 59);
+            this.label1.Location = new System.Drawing.Point(32, 58);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 23);
             this.label1.TabIndex = 30;
             this.label1.Text = "Course ID";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // printGrid
             // 
@@ -184,7 +184,7 @@ namespace WindowsFormsApp1
             | System.Windows.Forms.AnchorStyles.Right)));
             this.printGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.printGrid.BackgroundColor = System.Drawing.Color.Black;
-            this.printGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.printGrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.printGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
@@ -233,18 +233,19 @@ namespace WindowsFormsApp1
             // 
             this.cid_Box.BackColor = System.Drawing.Color.Black;
             this.cid_Box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cid_Box.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F);
+            this.cid_Box.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.cid_Box.ForeColor = System.Drawing.Color.White;
             this.cid_Box.FormattingEnabled = true;
             this.cid_Box.Location = new System.Drawing.Point(140, 59);
             this.cid_Box.Name = "cid_Box";
-            this.cid_Box.Size = new System.Drawing.Size(159, 24);
+            this.cid_Box.Size = new System.Drawing.Size(159, 21);
             this.cid_Box.TabIndex = 32;
+            this.cid_Box.SelectedIndexChanged += new System.EventHandler(this.cid_Box_SelectedIndexChanged);
             // 
             // score_Box
             // 
             this.score_Box.BackColor = System.Drawing.Color.Black;
-            this.score_Box.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F);
+            this.score_Box.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.score_Box.ForeColor = System.Drawing.Color.White;
             this.score_Box.Location = new System.Drawing.Point(140, 150);
             this.score_Box.Maximum = new decimal(new int[] {
@@ -253,7 +254,7 @@ namespace WindowsFormsApp1
             0,
             0});
             this.score_Box.Name = "score_Box";
-            this.score_Box.Size = new System.Drawing.Size(159, 24);
+            this.score_Box.Size = new System.Drawing.Size(159, 21);
             this.score_Box.TabIndex = 33;
             this.score_Box.Value = new decimal(new int[] {
             10,

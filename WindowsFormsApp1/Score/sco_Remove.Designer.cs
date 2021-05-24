@@ -156,7 +156,7 @@ namespace WindowsFormsApp1
             // 
             this.RemoveSco_btn.BackColor = System.Drawing.Color.Black;
             this.RemoveSco_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RemoveSco_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RemoveSco_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.RemoveSco_btn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.RemoveSco_btn.Location = new System.Drawing.Point(320, 409);
             this.RemoveSco_btn.Margin = new System.Windows.Forms.Padding(2);

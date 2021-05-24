@@ -71,23 +71,42 @@ namespace WindowsFormsApp1
 
         private void AddSco_btn_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(id_Box.Text);
-            int cid = Convert.ToInt32(cid_Box.Text);
-            string clabel = clabel_Box.Text;
-            int score = Convert.ToInt32(score_Box.Text);
-            string description = description_Box.Text;
 
             if (verif())
             {
-                if (sc.addScore(id, cid, clabel, score, description))
+                int id = Convert.ToInt32(id_Box.Text);
+                int cid = Convert.ToInt32(cid_Box.Text);
+                string clabel = clabel_Box.Text;
+                int score = Convert.ToInt32(score_Box.Text);
+                string description = description_Box.Text;
+                if (sc.checkScore(id,cid))
                 {
-                    MessageBox.Show("Add Score Successful", "Add Score", MessageBoxButtons.OK);
+                    MessageBox.Show("Score already exists", "Add Score", MessageBoxButtons.OK);
                 }
                 else
                 {
-                    MessageBox.Show("Error", "Add Score", MessageBoxButtons.OK);
+                    if (sc.addScore(id, cid, clabel, score, description))
+                    {
+                        MessageBox.Show("Add Score Successful", "Add Score", MessageBoxButtons.OK);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error", "Add Score", MessageBoxButtons.OK);
+                    }
                 }
             }
+        }
+
+        private void cid_Box_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int cid = Convert.ToInt32(cid_Box.SelectedValue);
+                DataTable dt = new DataTable();
+                dt = cou.getCourseById(cid);
+                clabel_Box.Text = dt.Rows[0][1].ToString();
+            }
+            catch { }
         }
     }
 }

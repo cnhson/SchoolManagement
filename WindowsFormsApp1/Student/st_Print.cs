@@ -31,8 +31,16 @@ namespace WindowsFormsApp1
                 winword.Visible = false;
                 object missing = System.Reflection.Missing.Value;
                 Microsoft.Office.Interop.Word.Document document = winword.Documents.Add(ref missing, ref missing, ref missing, ref missing);
-                Microsoft.Office.Interop.Word.Paragraph para1 = document.Content.Paragraphs.Add(ref missing);
-                int rows = printGrid.Rows.Count+1;      
+                    Paragraph para1 = document.Content.Paragraphs.Add(ref missing);
+                    object styleHeading1 = "Heading 1";
+                    para1.Range.set_Style(ref styleHeading1);
+                    para1.Range.Text = "Students List";
+                    para1.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
+                    para1.Range.InsertParagraphAfter();
+                    para1.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphLeft;
+                    para1.Range.Text = "\r\n Class: 19110CLA2 \r\n Windows Programming";
+                    para1.Range.InsertParagraphAfter();
+                    int rows = printGrid.Rows.Count+1;      
                 int columns = printGrid.Columns.Count;  
 
                 Table T = document.Tables.Add(para1.Range, rows, columns, ref missing, ref missing);

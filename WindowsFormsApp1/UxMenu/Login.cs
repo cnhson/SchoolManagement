@@ -82,5 +82,10 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Check username or password", "Login", MessageBoxButtons.OK);
             }
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -40,22 +40,33 @@ namespace WindowsFormsApp1
 
         private void AddCou_btn_Click(object sender, EventArgs e)
         {
-            Course cou = new Course();
-            int cid = Convert.ToInt32(cid_Box.Text);
-            string clabel = clabel_Box.Text;
-            int cperiod = Convert.ToInt32(cperiod_Box.Text);
-            string description = description_Box.Text;
 
             if (verif())
             {
-                if (cou.addCourse(cid, clabel, cperiod, description))
+                Course cou = new Course();
+                int cid = Convert.ToInt32(cid_Box.Text);
+                string clabel = clabel_Box.Text;
+                int cperiod = Convert.ToInt32(cperiod_Box.Text);
+                string description = description_Box.Text;
+                if(cou.checkCourse(cid,clabel))
                 {
-                    MessageBox.Show("Add Course Successful", "Add Course", MessageBoxButtons.OK);
+                    MessageBox.Show("Course already exist", "Add Course", MessageBoxButtons.OK);
                 }
                 else
                 {
-                    MessageBox.Show("Error", "Add Course", MessageBoxButtons.OK);
+                    if (cou.addCourse(cid, clabel, cperiod, description))
+                    {
+                        MessageBox.Show("Add Course Successful", "Add Course", MessageBoxButtons.OK);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error", "Add Course", MessageBoxButtons.OK);
+                    }
                 }
+            }
+            else
+            {
+                MessageBox.Show("No blank allowed and Period >= 10", "Add course", MessageBoxButtons.OK);
             }
         }
     }

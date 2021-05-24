@@ -78,12 +78,12 @@ namespace WindowsFormsApp1
             this.label_UserName.AutoSize = true;
             this.label_UserName.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_UserName.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label_UserName.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_UserName.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_UserName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label_UserName.Location = new System.Drawing.Point(41, 52);
+            this.label_UserName.Location = new System.Drawing.Point(41, 53);
             this.label_UserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_UserName.Name = "label_UserName";
-            this.label_UserName.Size = new System.Drawing.Size(75, 19);
+            this.label_UserName.Size = new System.Drawing.Size(69, 16);
             this.label_UserName.TabIndex = 3;
             this.label_UserName.Text = "Username";
             // 
@@ -92,20 +92,22 @@ namespace WindowsFormsApp1
             this.label_Password.AutoSize = true;
             this.label_Password.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_Password.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label_Password.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Password.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Password.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label_Password.Location = new System.Drawing.Point(41, 80);
+            this.label_Password.Location = new System.Drawing.Point(41, 84);
             this.label_Password.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_Password.Name = "label_Password";
-            this.label_Password.Size = new System.Drawing.Size(71, 19);
+            this.label_Password.Size = new System.Drawing.Size(67, 16);
             this.label_Password.TabIndex = 4;
             this.label_Password.Text = "Password";
             // 
             // login_btn
             // 
-            this.login_btn.BackColor = System.Drawing.Color.Black;
+            this.login_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.login_btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.login_btn.FlatAppearance.BorderSize = 0;
             this.login_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.login_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F);
+            this.login_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
             this.login_btn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.login_btn.Location = new System.Drawing.Point(42, 145);
             this.login_btn.Margin = new System.Windows.Forms.Padding(2);
@@ -118,9 +120,11 @@ namespace WindowsFormsApp1
             // 
             // btn_Cancel
             // 
-            this.btn_Cancel.BackColor = System.Drawing.Color.Black;
+            this.btn_Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btn_Cancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btn_Cancel.FlatAppearance.BorderSize = 0;
             this.btn_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Cancel.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F);
+            this.btn_Cancel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_Cancel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_Cancel.Location = new System.Drawing.Point(184, 145);
             this.btn_Cancel.Margin = new System.Windows.Forms.Padding(2);
@@ -138,7 +142,7 @@ namespace WindowsFormsApp1
             | System.Windows.Forms.AnchorStyles.Right)));
             this.register_btn.BackColor = System.Drawing.Color.Black;
             this.register_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.register_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F);
+            this.register_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_btn.ForeColor = System.Drawing.Color.Gray;
             this.register_btn.Location = new System.Drawing.Point(-1, 222);
             this.register_btn.Margin = new System.Windows.Forms.Padding(2);
@@ -158,7 +162,7 @@ namespace WindowsFormsApp1
             // 
             this.panel1.Controls.Add(this.hr_radbtn);
             this.panel1.Controls.Add(this.student_radbtn);
-            this.panel1.Location = new System.Drawing.Point(42, 107);
+            this.panel1.Location = new System.Drawing.Point(42, 118);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(251, 22);
             this.panel1.TabIndex = 8;
@@ -166,11 +170,11 @@ namespace WindowsFormsApp1
             // hr_radbtn
             // 
             this.hr_radbtn.AutoSize = true;
-            this.hr_radbtn.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hr_radbtn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.hr_radbtn.ForeColor = System.Drawing.Color.White;
             this.hr_radbtn.Location = new System.Drawing.Point(139, 1);
             this.hr_radbtn.Name = "hr_radbtn";
-            this.hr_radbtn.Size = new System.Drawing.Size(112, 18);
+            this.hr_radbtn.Size = new System.Drawing.Size(109, 17);
             this.hr_radbtn.TabIndex = 1;
             this.hr_radbtn.Text = "Human Resource";
             this.hr_radbtn.UseVisualStyleBackColor = true;
@@ -179,12 +183,13 @@ namespace WindowsFormsApp1
             // 
             this.student_radbtn.AutoSize = true;
             this.student_radbtn.Checked = true;
-            this.student_radbtn.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.student_radbtn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.student_radbtn.ForeColor = System.Drawing.Color.White;
             this.student_radbtn.Location = new System.Drawing.Point(0, 1);
             this.student_radbtn.Name = "student_radbtn";
-            this.student_radbtn.Size = new System.Drawing.Size(66, 18);
+            this.student_radbtn.Size = new System.Drawing.Size(64, 17);
             this.student_radbtn.TabIndex = 0;
+            this.student_radbtn.TabStop = true;
             this.student_radbtn.Text = "Student";
             this.student_radbtn.UseVisualStyleBackColor = true;
             // 
@@ -211,6 +216,7 @@ namespace WindowsFormsApp1
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Account Login";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

@@ -29,11 +29,11 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.radbtn_no = new System.Windows.Forms.RadioButton();
             this.radbtn_yes = new System.Windows.Forms.RadioButton();
             this.btn_check = new System.Windows.Forms.Button();
@@ -68,11 +68,11 @@ namespace WindowsFormsApp1
             // 
             this.radbtn_no.AutoSize = true;
             this.radbtn_no.Checked = true;
-            this.radbtn_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radbtn_no.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
             this.radbtn_no.ForeColor = System.Drawing.Color.White;
             this.radbtn_no.Location = new System.Drawing.Point(191, 19);
             this.radbtn_no.Name = "radbtn_no";
-            this.radbtn_no.Size = new System.Drawing.Size(46, 20);
+            this.radbtn_no.Size = new System.Drawing.Size(42, 20);
             this.radbtn_no.TabIndex = 19;
             this.radbtn_no.TabStop = true;
             this.radbtn_no.Text = "No";
@@ -81,11 +81,11 @@ namespace WindowsFormsApp1
             // radbtn_yes
             // 
             this.radbtn_yes.AutoSize = true;
-            this.radbtn_yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radbtn_yes.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
             this.radbtn_yes.ForeColor = System.Drawing.Color.White;
             this.radbtn_yes.Location = new System.Drawing.Point(132, 19);
             this.radbtn_yes.Name = "radbtn_yes";
-            this.radbtn_yes.Size = new System.Drawing.Size(53, 20);
+            this.radbtn_yes.Size = new System.Drawing.Size(46, 20);
             this.radbtn_yes.TabIndex = 20;
             this.radbtn_yes.Text = "Yes";
             this.radbtn_yes.UseVisualStyleBackColor = true;
@@ -97,7 +97,7 @@ namespace WindowsFormsApp1
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_check.BackColor = System.Drawing.Color.Black;
             this.btn_check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_check.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_check.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_check.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_check.Location = new System.Drawing.Point(757, 33);
             this.btn_check.Name = "btn_check";
@@ -110,72 +110,72 @@ namespace WindowsFormsApp1
             // and
             // 
             this.and.AutoSize = true;
-            this.and.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.and.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
             this.and.ForeColor = System.Drawing.Color.White;
             this.and.Location = new System.Drawing.Point(250, 56);
             this.and.Name = "and";
-            this.and.Size = new System.Drawing.Size(34, 16);
+            this.and.Size = new System.Drawing.Size(29, 16);
             this.and.TabIndex = 17;
             this.and.Text = "and";
             // 
             // datetime2
             // 
             this.datetime2.CustomFormat = " dd  / MM /  yyyy";
-            this.datetime2.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datetime2.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
             this.datetime2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datetime2.Location = new System.Drawing.Point(289, 51);
             this.datetime2.Margin = new System.Windows.Forms.Padding(2);
             this.datetime2.MaxDate = new System.DateTime(2005, 12, 12, 0, 0, 0, 0);
             this.datetime2.Name = "datetime2";
             this.datetime2.RightToLeftLayout = true;
-            this.datetime2.Size = new System.Drawing.Size(134, 25);
+            this.datetime2.Size = new System.Drawing.Size(134, 23);
             this.datetime2.TabIndex = 16;
             this.datetime2.Value = new System.DateTime(2005, 1, 1, 0, 0, 0, 0);
             // 
             // datetime1
             // 
             this.datetime1.CustomFormat = " dd  / MM /  yyyy";
-            this.datetime1.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datetime1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
             this.datetime1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datetime1.Location = new System.Drawing.Point(111, 51);
             this.datetime1.Margin = new System.Windows.Forms.Padding(2);
             this.datetime1.MaxDate = new System.DateTime(2005, 12, 12, 0, 0, 0, 0);
             this.datetime1.Name = "datetime1";
             this.datetime1.RightToLeftLayout = true;
-            this.datetime1.Size = new System.Drawing.Size(134, 25);
+            this.datetime1.Size = new System.Drawing.Size(134, 23);
             this.datetime1.TabIndex = 15;
             this.datetime1.Value = new System.DateTime(2005, 1, 1, 0, 0, 0, 0);
             // 
             // datebetween
             // 
             this.datebetween.AutoSize = true;
-            this.datebetween.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datebetween.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
             this.datebetween.ForeColor = System.Drawing.Color.White;
             this.datebetween.Location = new System.Drawing.Point(3, 56);
             this.datebetween.Name = "datebetween";
-            this.datebetween.Size = new System.Drawing.Size(103, 16);
+            this.datebetween.Size = new System.Drawing.Size(87, 16);
             this.datebetween.TabIndex = 13;
             this.datebetween.Text = "Date between";
             // 
             // usedaterange
             // 
             this.usedaterange.AutoSize = true;
-            this.usedaterange.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usedaterange.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
             this.usedaterange.ForeColor = System.Drawing.Color.White;
             this.usedaterange.Location = new System.Drawing.Point(3, 21);
             this.usedaterange.Name = "usedaterange";
-            this.usedaterange.Size = new System.Drawing.Size(123, 16);
+            this.usedaterange.Size = new System.Drawing.Size(100, 16);
             this.usedaterange.TabIndex = 14;
             this.usedaterange.Text = "Use Date Range";
             // 
             // radbtn_female
             // 
             this.radbtn_female.AutoSize = true;
-            this.radbtn_female.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radbtn_female.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radbtn_female.ForeColor = System.Drawing.Color.White;
             this.radbtn_female.Location = new System.Drawing.Point(141, 41);
             this.radbtn_female.Name = "radbtn_female";
-            this.radbtn_female.Size = new System.Drawing.Size(78, 20);
+            this.radbtn_female.Size = new System.Drawing.Size(69, 20);
             this.radbtn_female.TabIndex = 10;
             this.radbtn_female.Text = "Female";
             this.radbtn_female.UseVisualStyleBackColor = true;
@@ -183,11 +183,11 @@ namespace WindowsFormsApp1
             // radbtn_male
             // 
             this.radbtn_male.AutoSize = true;
-            this.radbtn_male.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radbtn_male.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radbtn_male.ForeColor = System.Drawing.Color.White;
             this.radbtn_male.Location = new System.Drawing.Point(70, 41);
             this.radbtn_male.Name = "radbtn_male";
-            this.radbtn_male.Size = new System.Drawing.Size(60, 20);
+            this.radbtn_male.Size = new System.Drawing.Size(54, 20);
             this.radbtn_male.TabIndex = 11;
             this.radbtn_male.Text = "Male";
             this.radbtn_male.UseVisualStyleBackColor = true;
@@ -196,11 +196,11 @@ namespace WindowsFormsApp1
             // 
             this.radbtn_all.AutoSize = true;
             this.radbtn_all.Checked = true;
-            this.radbtn_all.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radbtn_all.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radbtn_all.ForeColor = System.Drawing.Color.White;
             this.radbtn_all.Location = new System.Drawing.Point(20, 41);
             this.radbtn_all.Name = "radbtn_all";
-            this.radbtn_all.Size = new System.Drawing.Size(44, 20);
+            this.radbtn_all.Size = new System.Drawing.Size(42, 20);
             this.radbtn_all.TabIndex = 12;
             this.radbtn_all.TabStop = true;
             this.radbtn_all.Text = "All";
@@ -249,9 +249,9 @@ namespace WindowsFormsApp1
             this.printGrid.AllowUserToAddRows = false;
             this.printGrid.AllowUserToDeleteRows = false;
             this.printGrid.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Black;
-            this.printGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
+            this.printGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.printGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -259,14 +259,14 @@ namespace WindowsFormsApp1
             this.printGrid.BackgroundColor = System.Drawing.Color.Black;
             this.printGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.printGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.printGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.printGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.printGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.printGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
@@ -277,35 +277,35 @@ namespace WindowsFormsApp1
             this.phone,
             this.address,
             this.picture});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.printGrid.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.printGrid.DefaultCellStyle = dataGridViewCellStyle3;
             this.printGrid.EnableHeadersVisualStyles = false;
             this.printGrid.GridColor = System.Drawing.Color.White;
             this.printGrid.Location = new System.Drawing.Point(11, 112);
             this.printGrid.Margin = new System.Windows.Forms.Padding(2);
             this.printGrid.Name = "printGrid";
             this.printGrid.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Format = "d";
-            dataGridViewCellStyle9.NullValue = null;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.printGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Format = "d";
+            dataGridViewCellStyle4.NullValue = null;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.printGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.printGrid.RowHeadersVisible = false;
             this.printGrid.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Black;
-            this.printGrid.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Black;
+            this.printGrid.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.printGrid.RowTemplate.Height = 24;
             this.printGrid.Size = new System.Drawing.Size(880, 548);
             this.printGrid.TabIndex = 25;
@@ -392,6 +392,7 @@ namespace WindowsFormsApp1
             this.panel1.Controls.Add(this.radbtn_all);
             this.panel1.Controls.Add(this.radbtn_male);
             this.panel1.Controls.Add(this.radbtn_female);
+            this.panel1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.panel1.Location = new System.Drawing.Point(12, 7);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(232, 100);
@@ -406,6 +407,7 @@ namespace WindowsFormsApp1
             this.panel2.Controls.Add(this.and);
             this.panel2.Controls.Add(this.radbtn_no);
             this.panel2.Controls.Add(this.radbtn_yes);
+            this.panel2.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.panel2.Location = new System.Drawing.Point(275, 7);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(433, 100);

@@ -38,7 +38,7 @@ namespace WindowsFormsApp1
             // 
             this.RemoveCou_btn.BackColor = System.Drawing.Color.Black;
             this.RemoveCou_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RemoveCou_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RemoveCou_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.RemoveCou_btn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.RemoveCou_btn.Location = new System.Drawing.Point(328, 31);
             this.RemoveCou_btn.Margin = new System.Windows.Forms.Padding(2);
@@ -52,19 +52,19 @@ namespace WindowsFormsApp1
             // cid_Box
             // 
             this.cid_Box.BackColor = System.Drawing.Color.Black;
-            this.cid_Box.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cid_Box.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.cid_Box.ForeColor = System.Drawing.Color.White;
             this.cid_Box.Location = new System.Drawing.Point(115, 31);
             this.cid_Box.Margin = new System.Windows.Forms.Padding(2);
             this.cid_Box.Name = "cid_Box";
-            this.cid_Box.Size = new System.Drawing.Size(195, 24);
+            this.cid_Box.Size = new System.Drawing.Size(195, 21);
             this.cid_Box.TabIndex = 20;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(21, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);

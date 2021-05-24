@@ -35,7 +35,7 @@ namespace WindowsFormsApp1
 
         void ShowData(int index)
         {
-            DataRow dr = cou.getAllCourse().Rows[index];
+            DataRow dr = cou.getAllCourseInfo().Rows[index];
             courselist_Box.SelectedValue = index;
             cid_Box.Text = dr.ItemArray[0].ToString();
             clabel_Box.Text = dr.ItemArray[1].ToString();

@@ -52,6 +52,7 @@
     <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Sparkline.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -77,23 +78,53 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\Course.cs" />
-    <Compile Include="Contact.cs" />
-    <Compile Include="ContactMenu.cs">
+    <Compile Include="Class\Contact.cs" />
+    <Compile Include="Score\sco_Result.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ContactMenu.Designer.cs">
+    <Compile Include="Score\sco_Result.Designer.cs">
+      <DependentUpon>sco_Result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Score\sco_StaticResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Score\sco_StaticResult.Designer.cs">
+      <DependentUpon>sco_StaticResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Score\sco_Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Score\sco_Print.Designer.cs">
+      <DependentUpon>sco_Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\st_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\st_Edit.Designer.cs">
+      <DependentUpon>st_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UxMenu\ContactMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UxMenu\ContactMenu.Designer.cs">
       <DependentUpon>ContactMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="cont_Add.cs">
+    <Compile Include="Contact\cont_Add.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cont_Add.Designer.cs">
+    <Compile Include="Contact\cont_Add.Designer.cs">
       <DependentUpon>cont_Add.cs</DependentUpon>
     </Compile>
-    <Compile Include="cont_List.cs">
+    <Compile Include="Contact\cont_Edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cont_List.Designer.cs">
+    <Compile Include="Contact\cont_Edit.Designer.cs">
+      <DependentUpon>cont_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact\cont_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact\cont_List.Designer.cs">
       <DependentUpon>cont_List.cs</DependentUpon>
     </Compile>
     <Compile Include="Course\cou_Add.cs">
@@ -126,7 +157,7 @@
     <Compile Include="Course\cou_Remove.Designer.cs">
       <DependentUpon>cou_Remove.cs</DependentUpon>
     </Compile>
-    <Compile Include="Group.cs" />
+    <Compile Include="Class\Group.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -176,16 +207,16 @@
       <DependentUpon>st_List.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\DB.cs" />
-    <Compile Include="Login.cs">
+    <Compile Include="UxMenu\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="UxMenu\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainMenu.cs">
+    <Compile Include="UxMenu\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainMenu.Designer.cs">
+    <Compile Include="UxMenu\MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Student\st_Print.cs">
@@ -196,10 +227,10 @@
     </Compile>
     <Compile Include="Class\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Register.cs">
+    <Compile Include="UxMenu\Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Register.Designer.cs">
+    <Compile Include="UxMenu\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
     <Compile Include="Student\st_Statistics.cs">
@@ -215,11 +246,30 @@
       <DependentUpon>studentDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Class\User.cs" />
-    <EmbeddedResource Include="ContactMenu.resx">
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Score\sco_Result.resx">
+      <DependentUpon>sco_Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Score\sco_StaticResult.resx">
+      <DependentUpon>sco_StaticResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Score\sco_Print.resx">
+      <DependentUpon>sco_Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\st_Edit.resx">
+      <DependentUpon>st_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UxMenu\ContactMenu.resx">
       <DependentUpon>ContactMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cont_Add.resx">
+    <EmbeddedResource Include="Contact\cont_Add.resx">
       <DependentUpon>cont_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact\cont_Edit.resx">
+      <DependentUpon>cont_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact\cont_List.resx">
+      <DependentUpon>cont_List.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Course\cou_Add.resx">
       <DependentUpon>cou_Add.cs</DependentUpon>
@@ -257,10 +307,10 @@
     <EmbeddedResource Include="Student\st_List.resx">
       <DependentUpon>st_List.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="UxMenu\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainMenu.resx">
+    <EmbeddedResource Include="UxMenu\MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student\st_Print.resx">
@@ -271,12 +321,13 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Register.resx">
+    <EmbeddedResource Include="UxMenu\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student\st_Statistics.resx">
       <DependentUpon>st_Statistics.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\DataSources\Add_Student.datasource" />
     <None Include="Properties\DataSources\DataDataSet.datasource" />
     <None Include="Properties\DataSources\DB.datasource" />
@@ -322,6 +373,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\quit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

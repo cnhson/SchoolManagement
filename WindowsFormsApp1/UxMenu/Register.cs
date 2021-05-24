@@ -55,16 +55,16 @@ namespace WindowsFormsApp1
 
         private void register_btn_Click(object sender, EventArgs e)
         {
-            User us = new User();
-            int id = Convert.ToInt32(id_Box.Text);
-            string fname = fname_Box.Text;
-            string lname = lname_Box.Text;
-            string username = username_Box.Text;
-            string password = password_Box.Text;
-            MemoryStream pic = new MemoryStream();
 
             if (verif())
             {
+                User us = new User();
+                int id = Convert.ToInt32(id_Box.Text);
+                string fname = fname_Box.Text;
+                string lname = lname_Box.Text;
+                string username = username_Box.Text;
+                string password = password_Box.Text;
+                MemoryStream pic = new MemoryStream();
                 if (us.checkUser(username))
                 {
                     MessageBox.Show("Username already exists", "Create account", MessageBoxButtons.OK);

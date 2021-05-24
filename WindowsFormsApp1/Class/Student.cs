@@ -11,6 +11,30 @@ namespace WindowsFormsApp1
         string strCon = "Data Source=DESKTOP-A1KBTCS;Initial Catalog=student;Integrated Security=True";
 
         DB db = new DB();
+
+
+        public bool checkID(int id)
+        {
+            SqlCommand command = new SqlCommand("select * from STD_LIST where id = @id", db.GetConnection);
+            command.Parameters.Add("@id", SqlDbType.Int).Value = id;
+            SqlDataAdapter sda = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+
+            db.openConnection();
+
+            if ((dt.Rows.Count > 0))
+            {
+                db.closeConnection();
+                return true;
+            }
+            else
+            {
+                db.closeConnection();
+                return false;
+            }
+        }
+
         public bool addStudent(int id, string fname, string lname, DateTime bdate, string gender, string phone, string address, MemoryStream picture)
         {
             SqlCommand command = new SqlCommand("INSERT INTO STD_LIST (id, fname, lname, bdate, gender, phone, address, picture)" +
@@ -39,10 +63,10 @@ namespace WindowsFormsApp1
         }
         public bool delStudent(int id)    
         {
-            SqlCommand command = new SqlCommand("DELETE FROM STD_LIST WHERE id = @id", db.GetConnection);
+            SqlCommand command = new SqlCommand("Delete from SCORE where id = @id; DELETE FROM STD_LIST WHERE id = @id", db.GetConnection);
             command.Parameters.Add("@id", SqlDbType.Int).Value = id;
             db.openConnection();
-            if ((command.ExecuteNonQuery() == 1))
+            if ((command.ExecuteNonQuery() > 0))
             {
                 db.closeConnection();
                 return true;

@@ -50,7 +50,6 @@ namespace WindowsFormsApp1
             this.phonemg_Box = new System.Windows.Forms.TextBox();
             this.addressmg_Box = new System.Windows.Forms.TextBox();
             this.malemg_Box = new System.Windows.Forms.RadioButton();
-            this.bdatemg_Box = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.femalemg_Box = new System.Windows.Forms.RadioButton();
             this.Uploadbtn = new System.Windows.Forms.Button();
@@ -80,6 +79,7 @@ namespace WindowsFormsApp1
             this.add_btn = new System.Windows.Forms.Button();
             this.totalst_label = new System.Windows.Forms.Label();
             this.download_btn = new System.Windows.Forms.Button();
+            this.bdatemg_Box = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
@@ -92,123 +92,123 @@ namespace WindowsFormsApp1
             // 
             this.id_label.BackColor = System.Drawing.Color.Black;
             this.id_label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.id_label.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_label.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id_label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.id_label.Location = new System.Drawing.Point(17, 14);
+            this.id_label.Location = new System.Drawing.Point(37, 14);
             this.id_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.id_label.Name = "id_label";
             this.id_label.Size = new System.Drawing.Size(90, 23);
             this.id_label.TabIndex = 19;
             this.id_label.Text = "Student ID";
-            this.id_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.id_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // fname_label
             // 
             this.fname_label.BackColor = System.Drawing.Color.Black;
             this.fname_label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fname_label.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fname_label.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fname_label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.fname_label.Location = new System.Drawing.Point(16, 55);
+            this.fname_label.Location = new System.Drawing.Point(36, 55);
             this.fname_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fname_label.Name = "fname_label";
             this.fname_label.Size = new System.Drawing.Size(90, 23);
             this.fname_label.TabIndex = 20;
             this.fname_label.Text = "First Name";
-            this.fname_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fname_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lname_label
             // 
             this.lname_label.BackColor = System.Drawing.Color.Black;
             this.lname_label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lname_label.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lname_label.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lname_label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lname_label.Location = new System.Drawing.Point(17, 98);
+            this.lname_label.Location = new System.Drawing.Point(37, 98);
             this.lname_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lname_label.Name = "lname_label";
             this.lname_label.Size = new System.Drawing.Size(90, 23);
             this.lname_label.TabIndex = 21;
             this.lname_label.Text = "Last Name";
-            this.lname_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lname_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // bdate_label
             // 
             this.bdate_label.BackColor = System.Drawing.Color.Black;
             this.bdate_label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bdate_label.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bdate_label.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bdate_label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bdate_label.Location = new System.Drawing.Point(17, 138);
+            this.bdate_label.Location = new System.Drawing.Point(37, 138);
             this.bdate_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bdate_label.Name = "bdate_label";
             this.bdate_label.Size = new System.Drawing.Size(90, 23);
             this.bdate_label.TabIndex = 22;
             this.bdate_label.Text = "Birthday";
-            this.bdate_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bdate_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // gender_label
             // 
             this.gender_label.BackColor = System.Drawing.Color.Black;
             this.gender_label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gender_label.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gender_label.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gender_label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.gender_label.Location = new System.Drawing.Point(17, 177);
+            this.gender_label.Location = new System.Drawing.Point(37, 177);
             this.gender_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gender_label.Name = "gender_label";
             this.gender_label.Size = new System.Drawing.Size(90, 23);
             this.gender_label.TabIndex = 23;
             this.gender_label.Text = "Gender";
-            this.gender_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.gender_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // phone_label
             // 
             this.phone_label.BackColor = System.Drawing.Color.Black;
             this.phone_label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.phone_label.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phone_label.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phone_label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.phone_label.Location = new System.Drawing.Point(17, 214);
+            this.phone_label.Location = new System.Drawing.Point(37, 214);
             this.phone_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.phone_label.Name = "phone_label";
             this.phone_label.Size = new System.Drawing.Size(90, 23);
             this.phone_label.TabIndex = 24;
             this.phone_label.Text = "Phone";
-            this.phone_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.phone_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // address_label
             // 
             this.address_label.BackColor = System.Drawing.Color.Black;
             this.address_label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.address_label.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.address_label.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.address_label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.address_label.Location = new System.Drawing.Point(17, 252);
+            this.address_label.Location = new System.Drawing.Point(37, 252);
             this.address_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.address_label.Name = "address_label";
             this.address_label.Size = new System.Drawing.Size(90, 23);
             this.address_label.TabIndex = 0;
             this.address_label.Text = "Address";
-            this.address_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.address_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // picture_label
             // 
             this.picture_label.BackColor = System.Drawing.Color.Black;
             this.picture_label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.picture_label.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picture_label.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.picture_label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.picture_label.Location = new System.Drawing.Point(16, 340);
+            this.picture_label.Location = new System.Drawing.Point(36, 340);
             this.picture_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.picture_label.Name = "picture_label";
             this.picture_label.Size = new System.Drawing.Size(90, 23);
             this.picture_label.TabIndex = 0;
             this.picture_label.Text = "Picture";
-            this.picture_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.picture_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // idmg_Box
             // 
             this.idmg_Box.BackColor = System.Drawing.Color.Black;
-            this.idmg_Box.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idmg_Box.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.idmg_Box.ForeColor = System.Drawing.Color.White;
             this.idmg_Box.Location = new System.Drawing.Point(143, 14);
             this.idmg_Box.Margin = new System.Windows.Forms.Padding(2);
             this.idmg_Box.Name = "idmg_Box";
-            this.idmg_Box.Size = new System.Drawing.Size(258, 24);
+            this.idmg_Box.Size = new System.Drawing.Size(258, 21);
             this.idmg_Box.TabIndex = 0;
             this.idmg_Box.TextChanged += new System.EventHandler(this.idmg_Box_TextChanged);
             this.idmg_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
@@ -216,43 +216,43 @@ namespace WindowsFormsApp1
             // fnamemg_Box
             // 
             this.fnamemg_Box.BackColor = System.Drawing.Color.Black;
-            this.fnamemg_Box.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fnamemg_Box.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.fnamemg_Box.ForeColor = System.Drawing.Color.White;
             this.fnamemg_Box.Location = new System.Drawing.Point(143, 55);
             this.fnamemg_Box.Margin = new System.Windows.Forms.Padding(2);
             this.fnamemg_Box.Name = "fnamemg_Box";
-            this.fnamemg_Box.Size = new System.Drawing.Size(258, 24);
+            this.fnamemg_Box.Size = new System.Drawing.Size(258, 21);
             this.fnamemg_Box.TabIndex = 1;
             this.fnamemg_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.fname_Box_KeyPress);
             // 
             // lnamemg_Box
             // 
             this.lnamemg_Box.BackColor = System.Drawing.Color.Black;
-            this.lnamemg_Box.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnamemg_Box.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.lnamemg_Box.ForeColor = System.Drawing.Color.White;
             this.lnamemg_Box.Location = new System.Drawing.Point(143, 98);
             this.lnamemg_Box.Margin = new System.Windows.Forms.Padding(2);
             this.lnamemg_Box.Name = "lnamemg_Box";
-            this.lnamemg_Box.Size = new System.Drawing.Size(258, 24);
+            this.lnamemg_Box.Size = new System.Drawing.Size(258, 21);
             this.lnamemg_Box.TabIndex = 2;
             this.lnamemg_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lname_Box__KeyPress);
             // 
             // phonemg_Box
             // 
             this.phonemg_Box.BackColor = System.Drawing.Color.Black;
-            this.phonemg_Box.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phonemg_Box.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.phonemg_Box.ForeColor = System.Drawing.Color.White;
             this.phonemg_Box.Location = new System.Drawing.Point(143, 214);
             this.phonemg_Box.Margin = new System.Windows.Forms.Padding(2);
             this.phonemg_Box.Name = "phonemg_Box";
-            this.phonemg_Box.Size = new System.Drawing.Size(258, 24);
+            this.phonemg_Box.Size = new System.Drawing.Size(258, 21);
             this.phonemg_Box.TabIndex = 6;
             this.phonemg_Box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phone_Box_KeyPress);
             // 
             // addressmg_Box
             // 
             this.addressmg_Box.BackColor = System.Drawing.Color.Black;
-            this.addressmg_Box.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressmg_Box.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.addressmg_Box.ForeColor = System.Drawing.Color.White;
             this.addressmg_Box.Location = new System.Drawing.Point(143, 252);
             this.addressmg_Box.Margin = new System.Windows.Forms.Padding(2);
@@ -266,30 +266,16 @@ namespace WindowsFormsApp1
             this.malemg_Box.AutoSize = true;
             this.malemg_Box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.malemg_Box.Checked = true;
-            this.malemg_Box.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.malemg_Box.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.malemg_Box.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.malemg_Box.Location = new System.Drawing.Point(185, 178);
             this.malemg_Box.Margin = new System.Windows.Forms.Padding(2);
             this.malemg_Box.Name = "malemg_Box";
-            this.malemg_Box.Size = new System.Drawing.Size(56, 20);
+            this.malemg_Box.Size = new System.Drawing.Size(49, 17);
             this.malemg_Box.TabIndex = 4;
             this.malemg_Box.TabStop = true;
             this.malemg_Box.Text = "Male";
             this.malemg_Box.UseVisualStyleBackColor = true;
-            // 
-            // bdatemg_Box
-            // 
-            this.bdatemg_Box.CustomFormat = "                     dd  / MM /  yyyy";
-            this.bdatemg_Box.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bdatemg_Box.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.bdatemg_Box.Location = new System.Drawing.Point(143, 139);
-            this.bdatemg_Box.Margin = new System.Windows.Forms.Padding(2);
-            this.bdatemg_Box.MaxDate = new System.DateTime(2005, 12, 12, 0, 0, 0, 0);
-            this.bdatemg_Box.Name = "bdatemg_Box";
-            this.bdatemg_Box.RightToLeftLayout = true;
-            this.bdatemg_Box.Size = new System.Drawing.Size(258, 25);
-            this.bdatemg_Box.TabIndex = 3;
-            this.bdatemg_Box.Value = new System.DateTime(2005, 1, 1, 0, 0, 0, 0);
             // 
             // label9
             // 
@@ -309,12 +295,12 @@ namespace WindowsFormsApp1
             // 
             this.femalemg_Box.AutoSize = true;
             this.femalemg_Box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.femalemg_Box.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.femalemg_Box.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.femalemg_Box.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.femalemg_Box.Location = new System.Drawing.Point(307, 178);
             this.femalemg_Box.Margin = new System.Windows.Forms.Padding(2);
             this.femalemg_Box.Name = "femalemg_Box";
-            this.femalemg_Box.Size = new System.Drawing.Size(70, 20);
+            this.femalemg_Box.Size = new System.Drawing.Size(61, 17);
             this.femalemg_Box.TabIndex = 5;
             this.femalemg_Box.TabStop = true;
             this.femalemg_Box.Text = "Female";
@@ -324,7 +310,7 @@ namespace WindowsFormsApp1
             // 
             this.Uploadbtn.BackColor = System.Drawing.Color.Black;
             this.Uploadbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Uploadbtn.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Uploadbtn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.Uploadbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Uploadbtn.Location = new System.Drawing.Point(143, 557);
             this.Uploadbtn.Margin = new System.Windows.Forms.Padding(2);
@@ -339,9 +325,9 @@ namespace WindowsFormsApp1
             // 
             this.reset_btn.BackColor = System.Drawing.Color.Black;
             this.reset_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reset_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reset_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.reset_btn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.reset_btn.Location = new System.Drawing.Point(390, 620);
+            this.reset_btn.Location = new System.Drawing.Point(379, 594);
             this.reset_btn.Margin = new System.Windows.Forms.Padding(2);
             this.reset_btn.Name = "reset_btn";
             this.reset_btn.Size = new System.Drawing.Size(90, 30);
@@ -354,9 +340,9 @@ namespace WindowsFormsApp1
             // 
             this.update_btn.BackColor = System.Drawing.Color.Black;
             this.update_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.update_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.update_btn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.update_btn.Location = new System.Drawing.Point(143, 620);
+            this.update_btn.Location = new System.Drawing.Point(178, 594);
             this.update_btn.Margin = new System.Windows.Forms.Padding(2);
             this.update_btn.Name = "update_btn";
             this.update_btn.Size = new System.Drawing.Size(90, 30);
@@ -369,9 +355,9 @@ namespace WindowsFormsApp1
             // 
             this.remove_btn.BackColor = System.Drawing.Color.Black;
             this.remove_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.remove_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remove_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.remove_btn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.remove_btn.Location = new System.Drawing.Point(266, 620);
+            this.remove_btn.Location = new System.Drawing.Point(278, 594);
             this.remove_btn.Margin = new System.Windows.Forms.Padding(2);
             this.remove_btn.Name = "remove_btn";
             this.remove_btn.Size = new System.Drawing.Size(90, 30);
@@ -448,7 +434,7 @@ namespace WindowsFormsApp1
             this.find.BackColor = System.Drawing.Color.Black;
             this.find.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.find.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.find.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.find.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.find.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.find.Location = new System.Drawing.Point(1168, 14);
             this.find.Margin = new System.Windows.Forms.Padding(2);
@@ -536,6 +522,7 @@ namespace WindowsFormsApp1
             this.manageGrid.RowTemplate.Height = 24;
             this.manageGrid.Size = new System.Drawing.Size(821, 527);
             this.manageGrid.TabIndex = 26;
+            this.manageGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.manageGrid_CellContentClick);
             // 
             // id
             // 
@@ -617,24 +604,24 @@ namespace WindowsFormsApp1
             // search_Box
             // 
             this.search_Box.BackColor = System.Drawing.Color.Black;
-            this.search_Box.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold);
+            this.search_Box.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.search_Box.ForeColor = System.Drawing.Color.White;
-            this.search_Box.Location = new System.Drawing.Point(826, 14);
+            this.search_Box.Location = new System.Drawing.Point(808, 14);
             this.search_Box.Margin = new System.Windows.Forms.Padding(2);
             this.search_Box.Name = "search_Box";
-            this.search_Box.Size = new System.Drawing.Size(338, 24);
+            this.search_Box.Size = new System.Drawing.Size(338, 21);
             this.search_Box.TabIndex = 27;
             // 
             // search_label
             // 
             this.search_label.BackColor = System.Drawing.Color.Black;
             this.search_label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.search_label.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_label.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.search_label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.search_label.Location = new System.Drawing.Point(556, 14);
+            this.search_label.Location = new System.Drawing.Point(567, 14);
             this.search_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.search_label.Name = "search_label";
-            this.search_label.Size = new System.Drawing.Size(266, 23);
+            this.search_label.Size = new System.Drawing.Size(237, 23);
             this.search_label.TabIndex = 28;
             this.search_label.Text = "Search Fname, Lname, Address: ";
             this.search_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -643,9 +630,9 @@ namespace WindowsFormsApp1
             // 
             this.add_btn.BackColor = System.Drawing.Color.Black;
             this.add_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.add_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.add_btn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.add_btn.Location = new System.Drawing.Point(20, 620);
+            this.add_btn.Location = new System.Drawing.Point(75, 594);
             this.add_btn.Margin = new System.Windows.Forms.Padding(2);
             this.add_btn.Name = "add_btn";
             this.add_btn.Size = new System.Drawing.Size(90, 30);
@@ -673,7 +660,7 @@ namespace WindowsFormsApp1
             // 
             this.download_btn.BackColor = System.Drawing.Color.Black;
             this.download_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.download_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.download_btn.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
             this.download_btn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.download_btn.Location = new System.Drawing.Point(276, 557);
             this.download_btn.Margin = new System.Windows.Forms.Padding(2);
@@ -684,17 +671,36 @@ namespace WindowsFormsApp1
             this.download_btn.UseVisualStyleBackColor = false;
             this.download_btn.Click += new System.EventHandler(this.download_btn_Click);
             // 
-            // Management
+            // bdatemg_Box
+            // 
+            this.bdatemg_Box.CalendarFont = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bdatemg_Box.CalendarForeColor = System.Drawing.Color.Black;
+            this.bdatemg_Box.CalendarMonthBackground = System.Drawing.Color.Black;
+            this.bdatemg_Box.CalendarTitleBackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bdatemg_Box.CalendarTrailingForeColor = System.Drawing.Color.Black;
+            this.bdatemg_Box.CustomFormat = "           dd / MM / yyyy";
+            this.bdatemg_Box.Font = new System.Drawing.Font("Bahnschrift SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bdatemg_Box.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.bdatemg_Box.Location = new System.Drawing.Point(143, 140);
+            this.bdatemg_Box.Margin = new System.Windows.Forms.Padding(2);
+            this.bdatemg_Box.MaxDate = new System.DateTime(2005, 12, 12, 0, 0, 0, 0);
+            this.bdatemg_Box.Name = "bdatemg_Box";
+            this.bdatemg_Box.RightToLeftLayout = true;
+            this.bdatemg_Box.Size = new System.Drawing.Size(151, 21);
+            this.bdatemg_Box.TabIndex = 32;
+            this.bdatemg_Box.Value = new System.DateTime(2005, 1, 1, 0, 0, 0, 0);
+            // 
+            // st_Management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1284, 661);
+            this.Controls.Add(this.bdatemg_Box);
             this.Controls.Add(this.download_btn);
             this.Controls.Add(this.totalst_label);
             this.Controls.Add(this.add_btn);
-            this.Controls.Add(this.search_label);
             this.Controls.Add(this.search_Box);
             this.Controls.Add(this.manageGrid);
             this.Controls.Add(this.femalemg_Box);
@@ -708,7 +714,6 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.mgpicture);
-            this.Controls.Add(this.bdatemg_Box);
             this.Controls.Add(this.malemg_Box);
             this.Controls.Add(this.addressmg_Box);
             this.Controls.Add(this.phonemg_Box);
@@ -723,9 +728,10 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.gender_label);
             this.Controls.Add(this.fname_label);
             this.Controls.Add(this.id_label);
+            this.Controls.Add(this.search_label);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Management";
+            this.Name = "st_Management";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Management";
@@ -757,7 +763,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox phonemg_Box;
         private System.Windows.Forms.TextBox addressmg_Box;
         private System.Windows.Forms.RadioButton malemg_Box;
-        private System.Windows.Forms.DateTimePicker bdatemg_Box;
         private System.Windows.Forms.PictureBox mgpicture;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.RadioButton femalemg_Box;
@@ -787,5 +792,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button add_btn;
         private System.Windows.Forms.Label totalst_label;
         private System.Windows.Forms.Button download_btn;
+        private System.Windows.Forms.DateTimePicker bdatemg_Box;
     }
 }

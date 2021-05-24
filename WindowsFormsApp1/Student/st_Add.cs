@@ -93,30 +93,37 @@ namespace WindowsFormsApp1
 
         private void AddSt_Click(object sender, EventArgs e)
         {
-            Student st = new Student();
-            int id = Convert.ToInt32(id_Box.Text);
-            string fname = fname_Box.Text;
-            string lname = lname_Box.Text;
-            DateTime bdate = bdate_Box.Value;
-            string phone = phone_Box.Text;
-            string adrs = address_Box.Text;
-            string gender = "Female";
-            if (male_box.Checked)
-            {
-                gender = "Male";
-            }
-            MemoryStream pic = new MemoryStream();
 
             if (verif())
             {
-                pictureBox1.Image.Save(pic, pictureBox1.Image.RawFormat);
-                if(st.addStudent(id,fname,lname,bdate,gender,phone,adrs,pic))
+                Student st = new Student();
+                int id = Convert.ToInt32(id_Box.Text);
+                string fname = fname_Box.Text;
+                string lname = lname_Box.Text;
+                DateTime bdate = bdate_Box.Value;
+                string phone = phone_Box.Text;
+                string adrs = address_Box.Text;
+                string gender = "Female";
+                if (male_box.Checked)
                 {
-                    MessageBox.Show("Add Student Successful","Add Student",MessageBoxButtons.OK);
+                    gender = "Male";
+                }
+                MemoryStream pic = new MemoryStream();
+                pictureBox1.Image.Save(pic, pictureBox1.Image.RawFormat);
+                if (st.checkID(id))
+                {
+                    MessageBox.Show("Student's ID already exists", "Add Student", MessageBoxButtons.OK);
                 }
                 else
                 {
-                    MessageBox.Show("Error", "Add Student", MessageBoxButtons.OK);
+                    if (st.addStudent(id, fname, lname, bdate, gender, phone, adrs, pic))
+                    {
+                        MessageBox.Show("Add Student Successful", "Add Student", MessageBoxButtons.OK);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error", "Add Student", MessageBoxButtons.OK);
+                    }
                 }
             }
 

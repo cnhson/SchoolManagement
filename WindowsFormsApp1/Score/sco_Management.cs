@@ -86,28 +86,30 @@ namespace WindowsFormsApp1
                 }
                 if (datatype == "score")
                 {
-                    DataTable dt = new DataTable();
-                    dt = sc.getScorebyId(id);
-                    id_Box.Text = dt.Rows[0][0].ToString();
-                    clabel_Box.Text = dt.Rows[0][1].ToString();
-                    score_Box.Value = int.Parse(dt.Rows[0][2].ToString());
-                    description_Box.Text = dt.Rows[0][3].ToString();
                     int getid = Convert.ToInt32(printGrid.Rows[e.RowIndex].Cells[0].Value.ToString());
                     int getcid = Convert.ToInt32(printGrid.Rows[e.RowIndex].Cells[3].Value.ToString());
+                    SqlCommand command = new SqlCommand("select * from SCORE where id = "+getid+" and cid = "+getcid, db.GetConnection);
+                    DataTable dt = new DataTable();
+                    SqlDataAdapter sda = new SqlDataAdapter(command);
+                    sda.Fill(dt);
+                    id_Box.Text = dt.Rows[0][0].ToString();
+                    clabel_Box.Text = dt.Rows[0][2].ToString();
+                    score_Box.Value = int.Parse(dt.Rows[0][3].ToString());
+                    description_Box.Text = dt.Rows[0][4].ToString();
                 }
             }
         }
 
         private void Addsco_btn_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(id_Box.Text);
-            int cid = Convert.ToInt32(clabel_Box.Text);
-            string clabel = clabel_Box.Text;
-            int score = Convert.ToInt32(score_Box.Text);
-            string description = description_Box.Text;
-
             if (verif())
             {
+                int id = Convert.ToInt32(id_Box.Text);
+                int cid = Convert.ToInt32(clabel_Box.Text);
+                string clabel = clabel_Box.Text;
+                int score = Convert.ToInt32(score_Box.Text);
+                string description = description_Box.Text;
+
                 if (sc.addScore(id, cid, clabel, score, description))
                 {
                     MessageBox.Show("Add Score Successful", "Add Score", MessageBoxButtons.OK);

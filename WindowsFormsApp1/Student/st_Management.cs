@@ -111,22 +111,21 @@ namespace WindowsFormsApp1
 
         private void AddSt_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(idmg_Box.Text);
-            string fname = fnamemg_Box.Text;
-            string lname = lnamemg_Box.Text;
-            DateTime bdate = bdatemg_Box.Value;
-            string phone = phonemg_Box.Text;
-            string adrs = addressmg_Box.Text;
-            string gender = "Male";
-            MemoryStream pic = new MemoryStream();
-
-            if (femalemg_Box.Checked)
-            {
-                gender = "Female";
-            }
-
             if (verif())
             {
+                int id = Convert.ToInt32(idmg_Box.Text);
+                string fname = fnamemg_Box.Text;
+                string lname = lnamemg_Box.Text;
+                DateTime bdate = bdatemg_Box.Value;
+                string phone = phonemg_Box.Text;
+                string adrs = addressmg_Box.Text;
+                string gender = "Male";
+                MemoryStream pic = new MemoryStream();
+
+                if (femalemg_Box.Checked)
+                {
+                    gender = "Female";
+                }
                 mgpicture.Image.Save(pic, mgpicture.Image.RawFormat);
                 if(st.addStudent(id,fname,lname,bdate,gender,phone,adrs,pic))
                 {
@@ -182,7 +181,7 @@ namespace WindowsFormsApp1
                         lnamemg_Box.Text = "";
                         addressmg_Box.Text = "";
                         phonemg_Box.Text = "";
-                        bdatemg_Box.Value = DateTime.Now;
+                        bdatemg_Box.Value = new DateTime(2005, 12, 12);
                         mgpicture.Image = null;                      
                     }
                     else
@@ -199,23 +198,21 @@ namespace WindowsFormsApp1
 
         private void update_Click(object sender, EventArgs e)
         {
-            Student st = new Student();
-            int id = Convert.ToInt32(idmg_Box.Text);
-            string fname = fnamemg_Box.Text;
-            string lname = lnamemg_Box.Text;
-            DateTime bdate = bdatemg_Box.Value;
-            string phone = phonemg_Box.Text;
-            string adrs = addressmg_Box.Text;
-            string gender = "Male";
-            MemoryStream pic = new MemoryStream();
-
-            if (femalemg_Box.Checked)
-            {
-                gender = "Female";
-            }
-
             if (verif())
             {
+                int id = Convert.ToInt32(idmg_Box.Text);
+                string fname = fnamemg_Box.Text;
+                string lname = lnamemg_Box.Text;
+                DateTime bdate = bdatemg_Box.Value;
+                string phone = phonemg_Box.Text;
+                string adrs = addressmg_Box.Text;
+                string gender = "Male";
+                MemoryStream pic = new MemoryStream();
+
+                if (femalemg_Box.Checked)
+                {
+                    gender = "Female";
+                }
                 mgpicture.Image.Save(pic, mgpicture.Image.RawFormat);
                 if (st.upStudent(id, fname, lname, bdate, gender, phone, adrs, pic))
                 {
@@ -242,32 +239,6 @@ namespace WindowsFormsApp1
                     return true;
                 }
             }
-        }
-
-        private void find_Click(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-A1KBTCS;Initial Catalog=student;Integrated Security=True"); con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT * FROM STD_LIST WHERE id =" + int.Parse(idmg_Box.Text), con);
-                SqlDataReader sdr = cmd.ExecuteReader();
-                while (sdr.Read())
-                {
-
-                    fnamemg_Box.Text = (sdr["fname"].ToString());
-                    lnamemg_Box.Text = (sdr["lname"].ToString());
-                    bdatemg_Box.Value = Convert.ToDateTime(sdr["bdate"].ToString());
-                    phonemg_Box.Text = (sdr["phone"].ToString());
-                    if ((sdr["gender"].ToString()) == "Male")
-                    {
-                        malemg_Box.Checked = true;
-                    }
-                    else
-                    {
-                        femalemg_Box.Checked = true;
-                    }
-                    addressmg_Box.Text = (sdr["address"].ToString());
-                    MemoryStream ms = new MemoryStream((byte[])sdr["picture"]);
-                    mgpicture.Image = new Bitmap(ms);
-                }
         }
 
         private void reset_btn_Click(object sender, EventArgs e)
@@ -313,5 +284,35 @@ namespace WindowsFormsApp1
                 mgpicture.Image.Save((svf.FileName + "." + ImageFormat.Jpeg.ToString()));
             }
         }
+
+        private void manageGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex > -1 && manageGrid.Rows[e.RowIndex].Cells[e.ColumnIndex] != null)
+            {
+                int id = Convert.ToInt32(manageGrid.Rows[e.RowIndex].Cells[0].Value.ToString());
+                SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-A1KBTCS;Initial Catalog=student;Integrated Security=True"); con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT * FROM STD_LIST WHERE id =" + id, con);
+                SqlDataReader sdr = cmd.ExecuteReader();
+                while (sdr.Read())
+                {
+                    idmg_Box.Text = (sdr["id"].ToString());
+                    fnamemg_Box.Text = (sdr["fname"].ToString());
+                    lnamemg_Box.Text = (sdr["lname"].ToString());
+                    bdatemg_Box.Value = Convert.ToDateTime(sdr["bdate"].ToString());
+                    phonemg_Box.Text = (sdr["phone"].ToString());
+                    if ((sdr["gender"].ToString()) == "Male")
+                    {
+                        malemg_Box.Checked = true;
+                    }
+                    else
+                    {
+                        femalemg_Box.Checked = true;
+                    }
+                    addressmg_Box.Text = (sdr["address"].ToString());
+                    MemoryStream ms = new MemoryStream((byte[])sdr["picture"]);
+                    mgpicture.Image = new Bitmap(ms);
+                }
+        }
+    }
     }
 }

@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WindowsFormsApp1.Contact" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEEAAAAAAAQAAAABABAAAAAAACAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Class\Contact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.Course" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIAABABIAAAQAABEAAAAAAAEAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Class\Course.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.DB" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAQAAAAAQAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Class\DB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.Group" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAQABAgAACAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Class\Group.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.Program" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Class\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.Score" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAgAEAUAEAAAgABAAAAAAEgABAAABAAAAEBAAA=</HashCode>
+      <FileName>Class\Score.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.Student" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAgAAIAAAQAAICAAAAAAAAAAAAAEAIgEAAAAACAAA=</HashCode>
+      <FileName>Class\Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.User" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAIAAAAIAAAGAA=</HashCode>
+      <FileName>Class\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.cont_Add" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIgCBQBADBIAAEAAASAAQAKMoACAACQgBAIEAAQACA=</HashCode>
+      <FileName>Contact\cont_Add.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.cont_Edit" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIgAJQBACAIAAEAACSRAQAKAoACAACQgBAIEAAQACA=</HashCode>
+      <FileName>Contact\cont_Edit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.cont_List" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACgEAIACAQgAAAgACABQACIAAAQAECAAAAIAAAAAg=</HashCode>
+      <FileName>Contact\cont_List.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.cou_Add" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAAAAARACAAAIAAAACAAAQCDAwAAAAAAgAAAAAACAA=</HashCode>
+      <FileName>Course\cou_Add.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.cou_Edit" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQAQABARACAAAIBAAACAAQQCAAQAAAAAAAAAAAEACAI=</HashCode>
+      <FileName>Course\cou_Edit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.cou_Management" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>imAQAgCRACAAQIAAAACEAYUCDAQIAAQQAwQCAAEASAI=</HashCode>
+      <FileName>Course\cou_Management.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.cou_Print" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAABAAAECkigAAAAACBAAACAAAIAAAAAAAAAAAAEAI=</HashCode>
+      <FileName>Course\cou_Print.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.cou_Remove" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAABACAAABAAAACEAAACAAAAAAAAAAAiAAAAAAA=</HashCode>
+      <FileName>Course\cou_Remove.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.sco_Add" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gVIAAAABACgQAJAAAACARQQCAoAAACAEAAAAAAAQCAA=</HashCode>
+      <FileName>Score\sco_Add.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.sco_AvgScore" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAACgAAAAAAACAAAACAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Score\sco_AvgScore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.sco_Management" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFISBCEBQCgQAIAAgAGAQYQCAYAAACAASAAAAgIQTgA=</HashCode>
+      <FileName>Score\sco_Management.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.sco_Print" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhAAAAAAACACAAAAAECBAAACAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Score\sco_Print.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.sco_Remove" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ARAAAEAAACgAgAgABACAAIACAAAAAAAAACAAAgIABEg=</HashCode>
+      <FileName>Score\sco_Remove.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.sco_Result" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhACAAAAACACABAAAAChAQAKAgAQAAAACAAAAQAQEEA=</HashCode>
+      <FileName>Score\sco_Result.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.sco_StaticResult" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABABQAAAACAAABAAAACAAAACACAAAAIIAAAAAQAAEAA=</HashCode>
+      <FileName>Score\sco_StaticResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.st_Add" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cwEEAQAIwCAAABIAAACAYAALIgAAgQACgAAGEABQAAA=</HashCode>
+      <FileName>Student\st_Add.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.st_Edit" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgwJAJACIgAMAAACSJoAACAIECACBACAAAIAAgAEA=</HashCode>
+      <FileName>Student\st_Edit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.st_List" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACQAEAQAKIABIAAAACAgAAyAAoAAAAgAAAAAIAAEgA=</HashCode>
+      <FileName>Student\st_List.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.st_Management" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cgEwwJAIgbMgFPEAQGSqqQADAJIAIKBkigAGIIAgAgA=</HashCode>
+      <FileName>Student\st_Management.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.st_Print" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JkAQBGAAAKiBBIAAAACEgADKAAJBAAAgAAAAAYAAE0A=</HashCode>
+      <FileName>Student\st_Print.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.st_Statistics" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACAAABAAAACAAAACAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Student\st_Statistics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.studentDataSet" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAEAJABAAAQAAAAAhCSBgAAAAAAAFABBI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.ContactMenu" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAoAIRBIGORAAACAAGggwACITGsAJACAEBgASAAAAA=</HashCode>
+      <FileName>UxMenu\ContactMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.Login" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAQAABCCAARAWDAIGAAgACAIAAAgAAhQAAAQIABAA=</HashCode>
+      <FileName>UxMenu\Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.MainMenu" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>9z8AIgFAACDQCAIKIKuAQCzCjIyBgFBAEACEAEAAikE=</HashCode>
+      <FileName>UxMenu\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.MyColorTable" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACCBAAAACAAAAwADABAAAAIAIAAAAAAAAAAABAAg=</HashCode>
+      <FileName>UxMenu\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.Register" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIASRABACAIAAABAASACgIOAoCCAAAQAAAAIAAQBAA=</HashCode>
+      <FileName>UxMenu\Register.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.Properties.Resources" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAABEAAAAQAAAAAAAAABAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.Properties.Settings" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAIAAAAAABABAAAAQAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.studentDataSetTableAdapters.LOGINTableAdapter" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.studentDataSetTableAdapters.STD_LISTTableAdapter" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.studentDataSetTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQAAACAAAIBABAEBAAAAcAAoAAACgAAAAAQAAAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

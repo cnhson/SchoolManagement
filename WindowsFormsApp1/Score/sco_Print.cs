@@ -1,33 +1,32 @@
 ﻿using System;
-using System.Data;
+using System.Collections.Generic;
 using Microsoft.Office.Interop.Word;
+using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
-using System.Data.SqlClient;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class cou_Print : Form
+    public partial class sco_Print : Form
     {
-        string CS = @"Data Source=DESKTOP-A1KBTCS;Initial Catalog=student;Integrated Security=True";
-
-        public cou_Print()
+        Score sc = new Score();
+        public sco_Print()
         {
             InitializeComponent();
         }
 
-        private void cou_Print_Load(object sender, EventArgs e)
+        private void sco_Print_Load(object sender, EventArgs e)
         {
-            printGrid.RowTemplate.Height = 40;
-            using (SqlConnection con = new SqlConnection(CS))
-            {
-                con.Open();
-                SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM COURSE_LIST", con);
-                System.Data.DataTable dt = new System.Data.DataTable();
-                sda.Fill(dt);
-                printGrid.DataSource = dt;
-            }
+            scoregrid.RowTemplate.Height = 50;
+            scoregrid.DataSource = sc.ScoreTable();
+        }
+
+        private void save_btn_Click(object sender, EventArgs e)
+        {
+            CreateDocument();
         }
 
         private void CreateDocument()
@@ -47,19 +46,18 @@ namespace WindowsFormsApp1
                     winword.Visible = false;
                     object missing = System.Reflection.Missing.Value;
                     Document document = winword.Documents.Add(ref missing, ref missing, ref missing, ref missing);
-
                     Paragraph para1 = document.Content.Paragraphs.Add(ref missing);
                     object styleHeading1 = "Heading 1";
                     para1.Range.set_Style(ref styleHeading1);
-                    para1.Range.Text = "Courses List";
+                    para1.Range.Text = "Scores List";
                     para1.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
                     para1.Range.InsertParagraphAfter();
                     para1.Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphLeft;
                     para1.Range.Text = "\r\n Class: 19110CLA2 \r\n Windows Programming";
                     para1.Range.InsertParagraphAfter();
 
-                    int rows = printGrid.Rows.Count + 1;
-                    int columns = printGrid.Columns.Count;
+                    int rows = scoregrid.Rows.Count + 1;
+                    int columns = scoregrid.Columns.Count;
 
                     Table T = document.Tables.Add(para1.Range, rows, columns, ref missing, ref missing);
                     T.Borders.Enable = 1;
@@ -69,15 +67,16 @@ namespace WindowsFormsApp1
                         for (int j = 1; j < T.Columns.Count + 1; j++)
                         {
                             //Header 
-                            T.Rows[1].Cells[j].Range.Text = printGrid.Columns[j - 1].HeaderText.ToString();
+                            T.Rows[1].Cells[j].Range.Text = scoregrid.Columns[j - 1].HeaderText.ToString();
                             T.Rows[1].Cells[j].Range.Font.Bold = 1;
                             T.Rows[1].Cells[j].Range.Font.Name = "verdana";
-                            T.Rows[1].Cells[j].Range.Font.Size = 10;
+                            T.Rows[1].Cells[j].Range.Font.Size = 8;
                             T.Rows[1].Cells[j].Shading.BackgroundPatternColor = WdColor.wdColorGray25;
                             T.Rows[1].Cells[j].VerticalAlignment = WdCellVerticalAlignment.wdCellAlignVerticalCenter;
                             T.Rows[1].Cells[j].Range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
                             //Data
-                            T.Rows[i + 1].Cells[j].Range.Text = printGrid.Rows[i - 1].Cells[j - 1].Value.ToString();
+                            T.Rows[i + 1].Cells[j].Range.Text = scoregrid.Rows[i - 1].Cells[j - 1].Value.ToString();
+
                         }
                     }
                     Clipboard.Clear();
@@ -92,23 +91,6 @@ namespace WindowsFormsApp1
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void save_btn_Click(object sender, EventArgs e)
-        {
-            CreateDocument();
-        }
-
-        private void refresh_btn_Click(object sender, EventArgs e)
-        {
-            using (SqlConnection con = new SqlConnection(CS))
-            {
-                con.Open();
-                SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM COURSE_LIST", con);
-                System.Data.DataTable dt = new System.Data.DataTable();
-                sda.Fill(dt);
-                printGrid.DataSource = dt;
             }
         }
     }
