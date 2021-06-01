@@ -228,8 +228,11 @@ namespace WindowsFormsApp1
 
         private void logout_btn_Click(object sender, EventArgs e)
         {
-            sco_StaticResult sSR = new sco_StaticResult();
-            sSR.Show();
+            Close();
+            DB db = new DB();
+            db.closeConnection();
+            Login lof = new Login();
+            lof.Show();
         }
     }
 }
